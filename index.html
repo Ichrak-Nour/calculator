@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <section class="screen" id="screen"></section>
+        <section class="calcbuttons">
+            <div class="calcbuttonrow">
+                <button class="calcbutton double" onclick="clearDisplay()">C</button>
+                <button class="calcbutton" onclick="backspace()">&larr;</button>
+                <button class="calcbutton" onclick="appendtodisplay('/')">&divide;</button>
+            </div>
+
+            <div class="calcbuttonrow">
+                <button class="calcbutton" onclick="appendtodisplay('7')">7</button>
+                <button class="calcbutton" onclick="appendtodisplay('8')">8</button>
+                <button class="calcbutton" onclick="appendtodisplay('9')">9</button>
+                <button class="calcbutton" onclick="appendtodisplay('*')">&times;</button>
+            </div>
+
+            <div class="calcbuttonrow">
+                <button class="calcbutton" onclick="appendtodisplay('4')">4</button>
+                <button class="calcbutton" onclick="appendtodisplay('5')">5</button>
+                <button class="calcbutton" onclick="appendtodisplay('6')">6</button>
+                <button class="calcbutton" onclick="appendtodisplay('-')">&minus;</button>
+            </div>
+
+            <div class="calcbuttonrow">
+                <button class="calcbutton" onclick="appendtodisplay('1')">1</button>
+                <button class="calcbutton" onclick="appendtodisplay('2')">2</button>
+                <button class="calcbutton" onclick="appendtodisplay('3')">3</button>
+                <button class="calcbutton" onclick="appendtodisplay('+')">+</button>
+            </div>
+
+            <div class="calcbuttonrow">
+                <button class="calcbutton double" onclick="appendtodisplay('0')">0</button>
+                <button class="calcbutton" onclick="appendtodisplay('.')">.</button>
+                <button class="calcbutton" onclick="calculate()">=</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
